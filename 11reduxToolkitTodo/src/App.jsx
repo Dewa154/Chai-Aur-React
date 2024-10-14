@@ -12,7 +12,6 @@ function App() {
       <h1>Learn About Redux Toolkit</h1>
       <AddTodo />
       <Todos />
-      <UpdateTodo />
     </>
   )
 }

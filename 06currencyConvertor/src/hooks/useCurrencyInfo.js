@@ -1,15 +1,23 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-function useCurrencyInfo(currency){
-    const [data, setData] = useState({})
-    useEffect(() => {
-        fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies.json`)
-        .then((res) => res.json())
-        .then((res) => setData(res[currency]))
-        console.log(data);
-    }, [currency])
-    console.log(data);
-    return data;
+const rates = {
+  "USD": 1.00,
+  "EUR": 0.84,
+  "GBP": 0.76,
+  "INR": 74.83,
+  "AUD": 1.31,
+  "CAD": 1.28,
+  "CHF": 0.92,
+  "CNY": 6.45,
+  "JPY": 109.23,
+  "SGD": 1.35
+};
+
+function useCurrencyInfo() {
+  return rates;
 }
 
 export default useCurrencyInfo;
+
+
+

@@ -1,8 +1,8 @@
 // App.jsx
 import {useState, useEffect} from 'react';
-import { TodoProvider } from './context/TodoContext';
-import TodoForm from './components/TodoForm';
-import TodoItem from './components/TodoItem';
+import { TodoProvider } from './Context/TodoContext.jsx';
+import TodoForm from './Components/TodoForm.jsx';
+import TodoItem from './Components/TodoItem.jsx';
 
 function App() {
 

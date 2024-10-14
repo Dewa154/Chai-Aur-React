@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
@@ -25,10 +24,10 @@ function App() {
   //   } else {
   //     alert("Never Go Bellow 0")
   //   }
-    
   //   setCounter(counter)
   //   console.log("clicked", counter);
   // }
+
 
   let paragraph;
   if (counter === 0) {
@@ -40,20 +39,19 @@ function App() {
   }
 
   const addValue = () => {
-    // setCounter(counter => counter+1)
+    setCounter(counter => counter+1)
     // setCounter(prevCounter => prevCounter+1)
-    setCounter(hitesh => hitesh+1)
-    setCounter(hitesh => hitesh+1)
-    setCounter(hitesh => hitesh+1)
-    setCounter(hitesh => hitesh+1)
- 
+    // setCounter(hitesh => hitesh+1)
+    // setCounter(hitesh => hitesh+1)
+    // setCounter(hitesh => hitesh+1)
+    // setCounter(hitesh => hitesh+1)
   }
 
   const removeValue = () => {
-    setCounter(counter-1)
-    setCounter(counter-1)
-    setCounter(counter-1)
-    setCounter(counter-1)
+    setCounter(counter-1)             // ek bar likhne par ek number reduce hoga, 4 baar likhne par 4 number reduce hoga.
+    // setCounter(counter-1)
+    // setCounter(counter-1)
+    // setCounter(counter-1)
   }
 
   return (

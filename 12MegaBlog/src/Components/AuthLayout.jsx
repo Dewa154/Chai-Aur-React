@@ -18,9 +18,9 @@ export default function Protected({children, authentication = true}) {
         //     navigate("/login")
         // }
 
-        if (authentication && authStatus !== authentication){
+        if (authentication && (authStatus !== authentication)){
             navigate('/login')
-        } else if (!authentication && authStatus !== authentication) {
+        } else if (!authentication && (authStatus !== authentication)) {
             navigate("/")
         } 
         setLoader(false)

@@ -1,9 +1,9 @@
 // context/TodoContext.js
 import { createContext, useState } from 'react';
 
-const TodoContext = createContext();
+export const TodoContext = createContext();
 
-const TodoProvider = ({ children }) => {
+export const TodoProvider = ({ children }) => {
   const [todos, setTodos] = useState([]);
 
   // Function to add a new todo
@@ -24,4 +24,5 @@ const TodoProvider = ({ children }) => {
     </TodoContext.Provider>
   );
 };
+
 

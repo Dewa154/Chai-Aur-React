@@ -1,6 +1,7 @@
 // components/TodoForm.jsx
 import { useState, useContext } from 'react';
-import { TodoContext } from '../context/TodoContext';
+import { TodoContext } from '../Context/TodoContext';
+
 
 const TodoForm = () => {
   const { addTodo } = useContext(TodoContext);

@@ -16,7 +16,7 @@ function App() {
     setTodos((prev) => prev.map((prevTodo) => (prevTodo.id === id ? todo : prevTodo )))
   }
 
-  const deleteTodo = (id) => {
+  const deleteTodo = (id) => { 
     setTodos((prev) => prev.filter((todo) => todo.id !== id ))
   }
 
@@ -30,7 +30,7 @@ function App() {
     if (todos && todos.length > 0) {
       setTodos(todos)
     }
-  }, [])
+  }, [])  
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos))
@@ -48,7 +48,7 @@ function App() {
               </div>
               <div className="flex flex-wrap gap-y-3">
                   {/*Loop and Add TodoItem here */}
-                  {todos.map((todo) => (
+                  {todos.map((todo) => ( 
                     <div key={todo.id}
                     className='w-full'
                     >

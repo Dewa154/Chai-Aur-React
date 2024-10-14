@@ -20,7 +20,6 @@ function App() {
     for (let i = 1; i <= length; i++) {
       let char = Math.floor(Math.random() * str.length + 1)
       pass += str.charAt(char)
-      
     }
 
     setPassword(pass)
@@ -53,7 +52,8 @@ function App() {
           <button 
            onClick={copyPasswordToClipboard}
            className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'
-          >Copy</button>
+          >Copy
+          </button>
         </div>
         <div className='flex text-sm gap-x-2'>
           <div className='flex items-center gap-x-1'>

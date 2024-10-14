@@ -1,6 +1,6 @@
 // components/TodoItem.jsx
 import { useContext } from 'react';
-import { TodoContext } from '../Context';
+import { TodoContext } from '../Context/TodoContext';
 
 const TodoItem = ({ todo, index }) => {
   const { deleteTodo } = useContext(TodoContext);

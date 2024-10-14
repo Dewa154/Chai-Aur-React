@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client'
 // import {jsx as _jsx} from "react/jsx-runtime.js"
 import App from './App.jsx'
 
-function MyApp(){
-    return(
-        <div>
-            <h1>My App !</h1>
-        </div>
-    )
-}
+// function MyApp(){
+//     return(
+//         <div>
+//             <h1>My App !</h1>
+//         </div>
+//     )
+// }
 
 
 /* Bellow const Object formate is not runable on Vite + react 
@@ -36,14 +36,25 @@ const reactElement = React.createElement(
     'a',
     { href: 'https://google.com', target: '_blank' },
     'Click me to visit google ',
-    anotherUser
+    <br />,
+    <div>anotherUser</div>
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    // anotherElement
+    // anotherElement,
     // reactElement
-
     <App />
-    // MyApp()
+
 )
 
+
+// Note:- ReactDOM.createRoot -----//------ ke andar ek time me ek hi chij render hota hai, 
+// if run two times of this ReactDOM.createRoot -----//------,   so last ReactDOM is only execute.
+
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//     anotherElement,
+//     reactElement
+//     // <App />
+// )
+
+// MyApp()
